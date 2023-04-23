@@ -1,4 +1,5 @@
 import { useCallback, useState } from "react";
+import axios from "axios";
 import Input from "@/components/Input";
 
 const Auth = () => {
@@ -12,6 +13,19 @@ const Auth = () => {
     const toggleVariant = useCallback(() => {
         setVariant((currentVariant) => currentVariant === 'login' ? 'register' : 'login')
     }, [])
+
+    const register = useCallback(async () => {
+        try {
+            await axios.post('/api/register', {
+                email,
+                name,
+                password
+            });
+
+        } catch (error) {
+            console.log(error);
+        }
+    }, [email, name, password])
 
     return (
         <div className="relative h-full w-full bg-[url('/images/hero.jpg')] bg-center bg-no-repeat">
@@ -28,27 +42,27 @@ const Auth = () => {
                             {variant === 'register' && (
                         <Input
                                 label="Username"
-                                onChange={(event) => setEmail(event.target.value)}
+                                onChange={(event: any) => setName(event.target.value)}
                                 id="name"
                                 value={name}
                             />
                             )}
                             <Input
                                 label="Email"
-                                onChange={(event) => setName(event.target.value)}
+                                onChange={(event: any) => setEmail(event.target.value)}
                                 id="email"
                                 type="email"
                                 value={email}
                             />
                             <Input
                                 label="Password"
-                                onChange={(event) => setPassword(event.target.value)}
+                                onChange={(event: any) => setPassword(event.target.value)}
                                 id="password"
                                 type="password"
                                 value={password}
                             />
                         </div>
-                        <button className="bg-red-600 py-3 text-white rounded-md w-full mt-10 hover:bg-red-700 transition">
+                        <button onClick={register} className="bg-red-600 py-3 text-white rounded-md w-full mt-10 hover:bg-red-700 transition">
                             {variant === 'login' ? 'Login' : 'Register'}
                         </button>
                         <p className="text-neutral-500 mt-12">
