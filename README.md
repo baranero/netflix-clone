@@ -15,9 +15,9 @@ This is a Netflix Clone project, a web application built to mimic the functional
 
 ## Screenshots
 
-![Mobile](screen2.png)
+![Mobile](screen2.PNG)
 
-![Computer](screen1.png)
+![Computer](screen1.PNG)
 
 ## Installation and Setup
 
