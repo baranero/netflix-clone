@@ -1,39 +1,55 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Netflix Clone
 
-## Getting Started
+This is a Netflix Clone project, a web application built to mimic the functionality and design of the popular streaming platform Netflix. Users can browse movies and TV shows, view details about them, and watch trailers.
 
-First, run the development server:
+## Technologies
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+| Technology          | Description                                                                                                    |
+|---------------------|----------------------------------------------------------------------------------------------------------------|
+| Next.js             | Next.js is a popular React framework for building server-side rendered (SSR) and static websites with ease.   |
+| React               | React is a JavaScript library for building user interfaces, often used in combination with Next.js.           |
+| Tailwind CSS        | Tailwind CSS is a utility-first CSS framework that helps create custom-styled components with minimal CSS.    |
+| Framer Motion       | Framer Motion is a motion library for React that makes it easy to create smooth and interactive animations.   |
+| React Icons         | React Icons provides a collection of popular icon libraries as React components, making it easy to use icons.  |
+| Swiper              | Swiper is a modern touch slider library for mobile-friendly, responsive carousels and sliders.                 |
+| TypeScript          | TypeScript is a typed superset of JavaScript that adds static typing, improving code quality and development.  |
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Screenshots
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+![Mobile](screen2.png)
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+![Computer](screen1.png)
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+## Installation and Setup
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+To run locally on your machine, follow these steps:
 
-## Learn More
+1. Clone the repository:
 
-To learn more about Next.js, take a look at the following resources:
+`git clone https://github.com/baranero/netflix-clone.git`
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+2. Install dependencies:
 
-## Deploy on Vercel
+`cd netflix-clone` </br>
+`npm install`
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+3. Run the development server:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
-# netflix-clone
+`npm run dev`
+
+4. The application will be accessible at `http://localhost:3000`.
+
+## Available scripts
+
+| Command        | Description                                                                                                    |
+|---------------------|----------------------------------------------------------------------------------------------------------------|
+| npm run dev            | Open local server   |
+| npm run build           | Create optimized build           |
+| npm run start        | Start the production server after the build.         |
+| npm run lint       | Run ESLint to lint the project files.       |
+
+
+## Live demo
+
+https://netflix-clone-baranero.vercel.app/
