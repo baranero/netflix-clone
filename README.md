@@ -11,7 +11,6 @@ This is a Netflix Clone project, a web application built to mimic the functional
 | Tailwind CSS        | Tailwind CSS is a utility-first CSS framework that helps create custom-styled components with minimal CSS.    |
 | Framer Motion       | Framer Motion is a motion library for React that makes it easy to create smooth and interactive animations.   |
 | React Icons         | React Icons provides a collection of popular icon libraries as React components, making it easy to use icons.  |
-| Swiper              | Swiper is a modern touch slider library for mobile-friendly, responsive carousels and sliders.                 |
 | TypeScript          | TypeScript is a typed superset of JavaScript that adds static typing, improving code quality and development.  |
 
 ## Screenshots
